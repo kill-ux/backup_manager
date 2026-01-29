@@ -1,4 +1,5 @@
-import os, sys
+import os, sys, re
+from manager import create
 
 
 def main():
@@ -23,6 +24,7 @@ def main():
                 schedule,
             ]:  # Matches 'create' followed by exactly one argument
                 print(f"Creating with {schedule}")
+                create.create(schedule)
             case _:
                 print("Invalid arguments")
                 fd.write(f"Unknown command: {command}\n")
