@@ -2,28 +2,30 @@ import os, sys
 
 
 def main():
-    with open("./logs/backup_manager.log", "w") as fd:
+    folder = "logs"
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+
+    with open(os.path.join(folder, "backup_manager.log"), "w") as fd:
         if len(sys.argv) < 2:
             fd.write("wrong argment")
             sys.exit(1)
-        command = sys.argv[1].lower()
+
+        command = sys.argv[1:]
+
         match command:
-            case "start":
-                print("Service is starting...")
-
-            case "stop":
-                print("Service is stopping...")
-
-            case "create":
-                if len(sys.argv) != 3:
-                    fd.write("wrong argument\n")
-                    sys.exit(1)
-                schedule = sys.argv[2].lower()
-                print(f"Creating service with schedule: {schedule}")
-
-            case _:  # This is the 'default' case (wildcard)
+            case ["start"]:
+                print("Starting...")
+            case ["stop"]:
+                print("Stopping...")
+            case [
+                "create",
+                schedule,
+            ]:  # Matches 'create' followed by exactly one argument
+                print(f"Creating with {schedule}")
+            case _:
+                print("Invalid arguments")
                 fd.write(f"Unknown command: {command}\n")
-                sys.exit(1)
 
 
 if __name__ == "__main__":
