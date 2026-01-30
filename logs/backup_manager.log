@@ -18,3 +18,27 @@
 [30/01/2026 11:07] Error: malformed schedule: test;
 
 [30/01/2026 11:07] Error: Invalid argments
+
+[30/01/2026 11:44] TRACE: Show schedules list
+
+[30/01/2026 11:44] INFO: New schedule added => test2;16:07;office_docs
+
+[30/01/2026 11:44] TRACE: Show schedules list
+
+[30/01/2026 11:44] INFO: New schedule added => test2;16:07;office_docs
+
+[30/01/2026 11:45] TRACE: Show schedules list
+
+[30/01/2026 11:45] TRACE: Show schedules list
+
+[30/01/2026 11:45] TRACE: Show schedules list
+
+[30/01/2026 11:45] TRACE: Show schedules list
+
+[30/01/2026 11:45] INFO: New schedule added => test2;16:07;office_docs55
+
+[30/01/2026 11:45] TRACE: Show schedules list
+
+[30/01/2026 11:47] Error: Unexpected error while list a schedules: [Errno 2] No such file or directory: 'backup_schedules.txt'
+
+[30/01/2026 11:47] Error: Unexpected error while list a schedules: [Errno 2] No such file or directory: 'backup_schedules.txt'
