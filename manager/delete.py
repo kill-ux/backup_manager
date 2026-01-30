@@ -1,4 +1,5 @@
 from .logger import log_message
+import os
 
 
 def delete_schedule(index_str):
@@ -9,12 +10,20 @@ def delete_schedule(index_str):
         log_message(f"Error: index '{index_str}' is not a valid number")
         return
 
-    # with open("backup_schedules.txt", "r") as fr:
-    #     lines = fr.readlines()
+    if not os.path.exists("backup_schedules.txt"):
+        log_message(f"Error: can't find backup_schedules.txt")
+        return
 
-    # lines.pop(index)
+    with open("backup_schedules.txt", "r") as fr:
+        lines = fr.readlines()
 
-    # with open("backup_schedules.txt", "w") as f:
-    #     f.writelines(lines)
+    if index < 0 or index >= len(lines):
+        log_message(f"Error: can't find schedule at index {index}")
+        return
 
-    # log_message(f"Schedule at index {index} deleted")
+    lines.pop(index)
+
+    with open("backup_schedules.txt", "w") as f:
+        f.writelines(lines)
+
+    log_message(f"Schedule at index {index} deleted")
