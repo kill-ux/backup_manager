@@ -1,8 +1,0 @@
-test;16:07;backup_test
-test1;16:07;personal_data
-test2;15:29;office_docsinput/file1;16:48;office
-input/file2;16:48;office1
-input/dir;16:49;dirdir
-input/file1;16:51;hh
-input/file2;16:43;office2
-input/file2;16:53;office2

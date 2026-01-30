@@ -1,72 +1,12 @@
 
-[30/01/2026 10:48] INFO: New schedule added => test;16:07;backup_test
+[30/01/2026 18:17] WARN: Stop requested but service was not running.
 
-[30/01/2026 10:59] INFO: New schedule added => test1;16:07;personal_data
+[30/01/2026 18:17] Error: malformed schedule: wrong_format
 
-[30/01/2026 10:59] INFO: New schedule added => test2;16:07;office_docs
+[30/01/2026 18:17] Trace: Show backups list
 
-[30/01/2026 11:00] Error: malformed schedule: test;
+[30/01/2026 18:17] TRACE: backup_service started at PID => 2403314
 
-[30/01/2026 11:05] Error: Invalid argments
+[30/01/2026 18:17] TRACE: backup_service started at PID => 2403317
 
-[30/01/2026 11:07] INFO: New schedule added => test;16:07;backup_test
-
-[30/01/2026 11:07] INFO: New schedule added => test1;16:07;personal_data
-
-[30/01/2026 11:07] INFO: New schedule added => test2;16:07;office_docs
-
-[30/01/2026 11:07] Error: malformed schedule: test;
-
-[30/01/2026 11:07] Error: Invalid argments
-
-[30/01/2026 11:44] TRACE: Show schedules list
-
-[30/01/2026 11:44] INFO: New schedule added => test2;16:07;office_docs
-
-[30/01/2026 11:44] TRACE: Show schedules list
-
-[30/01/2026 11:44] INFO: New schedule added => test2;16:07;office_docs
-
-[30/01/2026 11:45] TRACE: Show schedules list
-
-[30/01/2026 11:45] TRACE: Show schedules list
-
-[30/01/2026 11:45] TRACE: Show schedules list
-
-[30/01/2026 11:45] TRACE: Show schedules list
-
-[30/01/2026 11:45] INFO: New schedule added => test2;16:07;office_docs55
-
-[30/01/2026 11:45] TRACE: Show schedules list
-
-[30/01/2026 11:47] Error: Unexpected error while list a schedules: [Errno 2] No such file or directory: 'backup_schedules.txt'
-
-[30/01/2026 11:47] Error: Unexpected error while list a schedules: [Errno 2] No such file or directory: 'backup_schedules.txt'
-
-[30/01/2026 11:48] Error: Invalid argments
-
-[30/01/2026 11:51] Error: Invalid argments
-
-[30/01/2026 11:51] TRACE: Show schedules list
-
-[30/01/2026 12:32] Error: Invalid argments
-
-[30/01/2026 16:46] TRACE: backup_service started at PID => 2295984
-
-[30/01/2026 16:47] INFO: New schedule added => input/file1;16:48;office
-
-[30/01/2026 16:48] INFO: New schedule added => input/file2;16:48;office1
-
-[30/01/2026 16:48] INFO: New schedule added => input/dir;16:49;dirdir
-
-[30/01/2026 16:50] INFO: New schedule added => input/file1;16:51;hh
-
-[30/01/2026 16:52] INFO: New schedule added => input/file2;16:43;office2
-
-[30/01/2026 16:52] INFO: New schedule added => input/file2;16:53;office2
-
-[30/01/2026 16:56] TRACE: backup_service (PID 2295984) stopped
-
-[30/01/2026 16:56] INFO: Stop requested but service was not running.
-
-[30/01/2026 16:56] INFO: Stop requested but service was not running.
+[30/01/2026 18:17] WARN: Stop requested but service was not running.
