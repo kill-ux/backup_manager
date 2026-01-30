@@ -1,32 +1,26 @@
-import os, sys
+import os, sys, re
+from manager.create import create
+from utils.create_dir import create_dir
+
 
 
 def main():
-    folder = "logs"
-    if not os.path.exists(folder):
-        os.makedirs(folder)
+    create_dir("logs")
 
-    with open(os.path.join(folder, "backup_manager.log"), "w") as fd:
-        if len(sys.argv) < 2:
-            fd.write("wrong argment")
-            sys.exit(1)
-
-        command = sys.argv[1:]
-
-        match command:
+    with open("./logs/backup_manager.log", "w") as fd:
+        match sys.argv[1:]:
             case ["start"]:
                 print("Starting...")
             case ["stop"]:
                 print("Stopping...")
-            case [
-                "create",
-                schedule,
-            ]:  # Matches 'create' followed by exactly one argument
-                print(f"Creating with {schedule}")
+            case ["create",schedule]:
+                create(schedule)
             case _:
                 print("Invalid arguments")
-                fd.write(f"Unknown command: {command}\n")
+                fd.write(f"Unknown command: {sys.argv[1:]}\n")
+
 
 
 if __name__ == "__main__":
     main()
+
