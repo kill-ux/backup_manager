@@ -1,5 +1,4 @@
 from utils.constants import *
-from manager.logger import log_message
 
 def get_schedules() -> list[str]:
     try:
