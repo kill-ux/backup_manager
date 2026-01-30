@@ -29,7 +29,7 @@ def stop():
         )
 
         if not result.stdout:
-            log_message("INFO: Stop requested but service was not running.")
+            log_message("WARN: Stop requested but service was not running.")
             return
 
         pids = result.stdout.split()
