@@ -1,4 +1,5 @@
 import re
+from .logger import log_message
 
 
 def create(schedule):
@@ -6,9 +7,14 @@ def create(schedule):
     if re.match(pattern, schedule):
         index = lines_line()
         with open("backup_schedules.txt", "a+") as fd:
-            fd.write(f"{index}: {schedule}\n")
+            fd.write(f"{"\n" if index else ""}{index}: {schedule}")
+    else:
+        log_message(f"Error: malformed schedule: {schedule}\n")
 
 
 def lines_line():
-    with open("backup_schedules.txt") as fd_r:
-        return sum(1 for line in fd_r)
+    try:
+        with open("backup_schedules.txt") as fd_r:
+            return sum(1 for line in fd_r)
+    except:
+        return 0
