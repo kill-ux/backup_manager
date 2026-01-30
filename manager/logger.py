@@ -6,7 +6,6 @@ def log_message(message):
     
     
     try:
-        os.makedirs(os.path.dirname("./logs/backup_manager.log"), exist_ok=True)
         with open("./logs/backup_manager.log", "a") as f:
             f.write(formatted_message + "\n")
     except Exception as e:
