@@ -1,6 +1,8 @@
 import os, sys, re
 from manager.create import create
+from manager.delete import delete_schedule
 from utils.create_dir import create_dir
+
 
 
 
@@ -15,6 +17,8 @@ def main():
                 print("Stopping...")
             case ["create",schedule]:
                 create(schedule)
+            case ["delete",index]:
+                delete_schedule(index)
             case _:
                 print("Invalid arguments")
                 fd.write(f"Unknown command: {sys.argv[1:]}\n")
