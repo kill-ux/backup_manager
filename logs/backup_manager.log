@@ -69,3 +69,99 @@
 
 [30/01/2026 12:32] Hello python
 
+
+[30/01/2026 14:44] TRACE: backup_service started at PID => 2220290
+
+[30/01/2026 14:44] Hello python
+
+[30/01/2026 14:44] Hello python
+
+[30/01/2026 14:44] Hello python
+
+[30/01/2026 14:44] Hello python
+
+[30/01/2026 14:44] Hello python
+
+[30/01/2026 14:50] TRACE: backup_service started at PID => 2223011
+
+[30/01/2026 14:52] TRACE: backup_service started at PID => 2224488
+
+[30/01/2026 14:52] TRACE: backup_service started at PID => 2224782
+
+[30/01/2026 14:53] TRACE: backup_service started at PID => 2225334
+
+[30/01/2026 14:53] TRACE: backup_service started at PID => 2225545
+
+[30/01/2026 14:54] TRACE: backup_service started at PID => 2225824
+
+[30/01/2026 14:56] TRACE: backup_service started at PID => 2227213
+
+[30/01/2026 15:16] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:16] TRACE: backup_service started at PID => 2238017
+
+[30/01/2026 15:16] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:16] TRACE: backup_service started at PID => 2238222
+
+[30/01/2026 15:17] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:26] TRACE: backup_service stopped
+
+[30/01/2026 15:26] TRACE: backup_service stopped
+
+[30/01/2026 15:26] TRACE: backup_service stopped
+
+[30/01/2026 15:26] TRACE: backup_service stopped
+
+[30/01/2026 15:26] TRACE: backup_service stopped
+
+[30/01/2026 15:26] TRACE: backup_service stopped
+
+[30/01/2026 15:27] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:27] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:28] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:29] Error: Unexpected error while startin a backup manager: Command '['pgrep', '-f', 'test.py']' returned non-zero exit status 1.
+
+[30/01/2026 15:30] TRACE: backup_service started at PID => 2246810
+
+[30/01/2026 15:30] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:31] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:31] TRACE: backup_service stopped
+
+[30/01/2026 15:31] TRACE: backup_service started at PID => 2247781
+
+[30/01/2026 15:31] TRACE: backup_service stopped
+
+[30/01/2026 15:31] TRACE: backup_service started at PID => 2248026
+
+[30/01/2026 15:40] TRACE: backup_service (PID {pid}) stopped
+
+[30/01/2026 15:41] INFO: Stop requested but service was not running.
+
+[30/01/2026 15:41] INFO: Stop requested but service was not running.
+
+[30/01/2026 15:41] TRACE: backup_service started at PID => 2253208
+
+[30/01/2026 15:41] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:42] WARN: Backup is already running. Skipping..
+
+[30/01/2026 15:42] WARNING: Backup is already running. Skipping..
+
+[30/01/2026 15:42] TRACE: backup_service (PID {pid}) stopped
+
+[30/01/2026 15:43] TRACE: backup_service started at PID => 2254838
+
+[30/01/2026 15:43] TRACE: backup_service (PID {pid}) stopped
+
+[30/01/2026 15:44] TRACE: backup_service started at PID => 2256617
+
+[30/01/2026 15:50] WARN: Backup is already running. Skipping..
+
+
