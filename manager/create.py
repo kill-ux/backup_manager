@@ -1,14 +1,15 @@
 import re
+from .logger import log_message
+from utils.constants import *
 
 
 def create(schedule):
-    pattern = r"^[^;]+;([01][0-9]|2[0-3]):[0-5][0-9];[^;]+$"
-    if re.match(pattern, schedule):
-        index = lines_line()
-        with open("backup_schedules.txt", "a+") as fd:
-            fd.write(f"{index}: {schedule}\n")
-
-
-def lines_line():
-    with open("backup_schedules.txt") as fd_r:
-        return sum(1 for line in fd_r)
+    try:
+        if re.match(SCHEDULES_PATTERN, schedule):
+            with open(SCHEDULES_FILE, "a+") as fd:
+                fd.write(f"{schedule}\n")
+                log_message(f"INFO: New schedule added => {schedule}")
+        else:
+            log_message(f"Error: malformed schedule: {schedule}")
+    except Exception as e:
+        log_message(f"Error: Unexpected error while adding a schedule: {e}")
