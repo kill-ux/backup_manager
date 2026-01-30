@@ -22,8 +22,7 @@ def main():
             case [
                 "create",
                 schedule,
-            ]:  # Matches 'create' followed by exactly one argument
-                print(f"Creating with {schedule}")
+            ]:
                 create.create(schedule)
             case _:
                 print("Invalid arguments")
