@@ -14,4 +14,4 @@ def check_and_extract_info(schedule):
     if backup_time != current_time:
         return None
     
-    return path, backup_name
+    return path, backup_name.strip()
