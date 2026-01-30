@@ -8,8 +8,10 @@ def run(args):
             print("Starting...")
         case ["stop"]:
             print("Stopping...")
+        case ["list"]:
+            print("Stopping...")
         case ["create",schedule]:
-            create(schedule)
+            list()
         case ["delete",index]:
             delete_schedule(index)
         case _:

@@ -8,3 +8,13 @@
 [30/01/2026 11:00] Error: malformed schedule: test;
 
 [30/01/2026 11:05] Error: Invalid argments
+
+[30/01/2026 11:07] INFO: New schedule added => test;16:07;backup_test
+
+[30/01/2026 11:07] INFO: New schedule added => test1;16:07;personal_data
+
+[30/01/2026 11:07] INFO: New schedule added => test2;16:07;office_docs
+
+[30/01/2026 11:07] Error: malformed schedule: test;
+
+[30/01/2026 11:07] Error: Invalid argments
