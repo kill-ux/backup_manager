@@ -165,3 +165,50 @@
 [30/01/2026 15:50] WARN: Backup is already running. Skipping..
 
 
+
+[30/01/2026 15:59] TRACE: Show schedules list
+
+[30/01/2026 16:03] INFO: New schedule added => test2;16:07;office_docs555454
+
+[30/01/2026 16:03] INFO: New schedule added => test2;16:07;office_docs555454
+
+[30/01/2026 16:05] INFO: New schedule added => test2;16:07;office_docs555454
+
+[30/01/2026 16:05] TRACE: Show schedules list
+
+[30/01/2026 16:06] INFO: New schedule added => test2;16:07;office
+
+[30/01/2026 16:06] TRACE: Show schedules list
+
+[30/01/2026 16:06] Error: can't find schedule at index 16
+
+[30/01/2026 16:06] Error: can't find schedule at index 16
+
+[30/01/2026 16:06] Trace: Schedule at index 15 deleted => test2;16:07;office
+
+
+[30/01/2026 16:06] TRACE: Show schedules list
+
+[30/01/2026 16:07] TRACE: Show schedules list
+
+[30/01/2026 16:07] TRACE: Show schedules list
+
+[30/01/2026 16:08] TRACE: Show schedules list
+
+[30/01/2026 16:08] Error: can't find schedule at index 15
+
+[30/01/2026 16:08] Trace: Schedule at index 5 deleted => test2;16:07;office_docs55
+
+[30/01/2026 16:08] TRACE: Show schedules list
+
+[30/01/2026 16:08] TRACE: backup_service started at PID => 2276253
+
+[30/01/2026 16:09] TRACE: backup_service started at PID => 2276738
+
+[30/01/2026 16:09] INFO: Stop requested but service was not running.
+
+[30/01/2026 16:10] TRACE: backup_service started at PID => 2277275
+
+[30/01/2026 16:10] TRACE: backup_service started at PID => 2277506
+
+[30/01/2026 16:10] TRACE: backup_service started at PID => 2277639

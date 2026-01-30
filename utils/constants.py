@@ -1,4 +1,4 @@
-import os
+
 
 SCHEDULES_FILE = "backup_schedules.txt"
 LOGS_DIR = "logs"

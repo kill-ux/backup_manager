@@ -3,7 +3,7 @@ from utils.constants import *
 
 def log_message(message):
     timestamp = datetime.now().strftime("[%d/%m/%Y %H:%M]")
-    formatted_message = f"{timestamp} {message}"
+    formatted_message = f"{timestamp} {message.strip()}"
     
     
     try:
