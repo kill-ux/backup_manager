@@ -42,3 +42,5 @@
 [30/01/2026 11:47] Error: Unexpected error while list a schedules: [Errno 2] No such file or directory: 'backup_schedules.txt'
 
 [30/01/2026 11:47] Error: Unexpected error while list a schedules: [Errno 2] No such file or directory: 'backup_schedules.txt'
+
+[30/01/2026 11:48] Error: Invalid argments
