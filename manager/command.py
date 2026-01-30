@@ -1,6 +1,7 @@
-from manager.create import create
+from .create import create
+from .logger import log_message
 
-def run(args, fd):
+def run(args):
     match args:
         case ["start"]:
             print("Starting...")
@@ -9,5 +10,4 @@ def run(args, fd):
         case ["create",schedule]:
             create(schedule)
         case _:
-            print("Invalid arguments")
-            fd.write(f"Unknown command: {args}\n")
+            log_message(f"Invalid argments\n")

@@ -1,29 +1,13 @@
-import os, sys, re
-from manager.create import create
-from manager.delete import delete_schedule
+import sys
 from utils.create_dir import create_dir
+from manager.command import run
 
 
 
 
 def main():
     create_dir("logs")
-
-    with open("./logs/backup_manager.log", "w") as fd:
-        match sys.argv[1:]:
-            case ["start"]:
-                print("Starting...")
-            case ["stop"]:
-                print("Stopping...")
-            case ["create",schedule]:
-                create(schedule)
-            case ["delete",index]:
-                delete_schedule(index)
-            case _:
-                print("Invalid arguments")
-                fd.write(f"Unknown command: {sys.argv[1:]}\n")
-
-
+    run(sys.argv[1:])
 
 if __name__ == "__main__":
     main()
