@@ -3,14 +3,15 @@ from .list_schedules import list_schedules
 from .delete import delete_schedule
 from .logger import log_message
 from .list_backups import list_backups
+from .worker import start,stop
 
 
 def run(args):
     match args:
         case ["start"]:
-            print("Starting...")
+            start()
         case ["stop"]:
-            print("Stopping...")
+            stop()
         case ["list"]:
             list_schedules()
         case ["create",schedule]:
