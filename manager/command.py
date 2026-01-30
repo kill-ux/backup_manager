@@ -8,9 +8,11 @@ def run(args):
             print("Starting...")
         case ["stop"]:
             print("Stopping...")
+        case ["list"]:
+            print("Stopping...")
         case ["create",schedule]:
-            create(schedule)
+            list()
         case ["delete",index]:
             delete_schedule(index)
         case _:
-            log_message(f"Invalid argments\n")
+            log_message(f"Error: Invalid argments")
