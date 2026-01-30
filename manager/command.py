@@ -1,4 +1,5 @@
 from .create import create
+from .list_schedules import list_schedules
 from .delete import delete_schedule
 from .logger import log_message
 
@@ -9,9 +10,9 @@ def run(args):
         case ["stop"]:
             print("Stopping...")
         case ["list"]:
-            print("Stopping...")
+            list_schedules()
         case ["create",schedule]:
-            list()
+            create(schedule)
         case ["delete",index]:
             delete_schedule(index)
         case _:
