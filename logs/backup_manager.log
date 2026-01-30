@@ -50,3 +50,23 @@
 [30/01/2026 11:51] TRACE: Show schedules list
 
 [30/01/2026 12:32] Error: Invalid argments
+
+[30/01/2026 16:46] TRACE: backup_service started at PID => 2295984
+
+[30/01/2026 16:47] INFO: New schedule added => input/file1;16:48;office
+
+[30/01/2026 16:48] INFO: New schedule added => input/file2;16:48;office1
+
+[30/01/2026 16:48] INFO: New schedule added => input/dir;16:49;dirdir
+
+[30/01/2026 16:50] INFO: New schedule added => input/file1;16:51;hh
+
+[30/01/2026 16:52] INFO: New schedule added => input/file2;16:43;office2
+
+[30/01/2026 16:52] INFO: New schedule added => input/file2;16:53;office2
+
+[30/01/2026 16:56] TRACE: backup_service (PID 2295984) stopped
+
+[30/01/2026 16:56] INFO: Stop requested but service was not running.
+
+[30/01/2026 16:56] INFO: Stop requested but service was not running.
