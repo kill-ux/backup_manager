@@ -27,7 +27,7 @@ def stop():
         result = subprocess.run(
             ["pgrep", "-f", TARGET_SCRIPT], capture_output=True, text=True
         )
-
+        
         if not result.stdout:
             log_message("WARN: Stop requested but service was not running.")
             return

@@ -6,7 +6,10 @@ from .make_backup import make_backup
 
 def run():
     while True:
-        for schedule in get_schedules():
+        schedules = get_schedules()
+        if schedules is None:
+            exit(1)
+        for schedule in schedules:
             info = check_and_extract_info(schedule)
             if info is None:
                 continue
