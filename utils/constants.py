@@ -7,4 +7,5 @@ SERVICE_LOG_FILE = "backup_service.log"
 MANAGERE_LOG = LOGS_DIR + "/" + MANAGERE_LOG_FILE
 SERVICE_LOG = LOGS_DIR + "/" + SERVICE_LOG_FILE
 BACKUPS_DIR = "backups"
-TARGET_SCRIPT = "backup_service"
+SCHEDULES_PATTERN = r"^([^;]+);(([01][0-9]|2[0-3]):[0-5][0-9]);([^;/]+)$"
+TARGET_SCRIPT = "backup_service.py"

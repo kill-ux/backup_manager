@@ -5,8 +5,7 @@ from utils.constants import *
 
 def create(schedule):
     try:
-        pattern = r"^[^;]+;([01][0-9]|2[0-3]):[0-5][0-9];[^;/]+$"
-        if re.match(pattern, schedule):
+        if re.match(SCHEDULES_PATTERN, schedule):
             with open(SCHEDULES_FILE, "a+") as fd:
                 fd.write(f"{schedule}\n")
                 log_message(f"INFO: New schedule added => {schedule}")

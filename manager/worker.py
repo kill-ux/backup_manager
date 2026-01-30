@@ -13,7 +13,7 @@ def start():
 
         fd = open(SERVICE_LOG, "a")
         ps = subprocess.Popen(
-            ["python3","-u", "test.py"], stdout=fd, stderr=fd, start_new_session=True
+            ["python3","-u", TARGET_SCRIPT], stdout=fd, stderr=fd, start_new_session=True
         )
         fd.close()
         log_message(f"TRACE: backup_service started at PID => {ps.pid}")
