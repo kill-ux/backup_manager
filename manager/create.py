@@ -11,4 +11,4 @@ def create(schedule):
 
 def lines_line():
     with open("backup_schedules.txt") as fd_r:
-        return len(fd_r.readlines())
+        return sum(1 for line in fd_r)
