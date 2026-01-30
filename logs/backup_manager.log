@@ -1,25 +1,12 @@
 
-[30/01/2026 10:42] Error: malformed schedule: c
+[30/01/2026 10:45] New schedule added: test;16:07;backup_test
 
+[30/01/2026 10:45] New schedule added: test;16:07;backup_test
 
-[30/01/2026 10:42] Error: malformed schedule: c
+[30/01/2026 10:45] New schedule added: test;16:07;backup_test
 
+[30/01/2026 10:46] Error: malformed schedule: test;16:07;
 
-[30/01/2026 10:42] Error: malformed schedule: c
+[30/01/2026 10:46] Error: malformed schedule: test;16:07;
 
-[30/01/2026 10:42] Error: malformed schedule: c
-
-[30/01/2026 10:42] Error: malformed schedule: c
-
-
-[30/01/2026 10:43] Error: malformed schedule: c
-
-
-[30/01/2026 10:43] Invalid argments
-
-
-[30/01/2026 10:43] Invalid argments
-
-
-[30/01/2026 10:43] Invalid argments
-
+[30/01/2026 10:46] INFO: New schedule added => test;16:07;backup_test

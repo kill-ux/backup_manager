@@ -10,4 +10,4 @@ def run(args):
         case ["create",schedule]:
             create(schedule)
         case _:
-            log_message(f"Invalid argments\n")
+            log_message(f"Invalid argments")

@@ -8,8 +8,9 @@ def create(schedule):
         index = lines_line()
         with open("backup_schedules.txt", "a+") as fd:
             fd.write(f"{"\n" if index else ""}{index}: {schedule}")
+            log_message(f"INFO: New schedule added => {schedule}")
     else:
-        log_message(f"Error: malformed schedule: {schedule}\n")
+        log_message(f"Error: malformed schedule: {schedule}")
 
 
 def lines_line():
